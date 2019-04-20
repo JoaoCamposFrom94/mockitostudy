@@ -1,3 +1,5 @@
+package com.learn.powermock;
+
 public class ServiceUsedByUtils {
   private String attribute;
 
@@ -6,7 +8,7 @@ public class ServiceUsedByUtils {
   }
 
   public String invokeInstanceMethod(){
-    return attribute;
+    return this.attribute;
   }
 
 }

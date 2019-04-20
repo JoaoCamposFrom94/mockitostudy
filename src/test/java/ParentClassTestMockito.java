@@ -1,3 +1,5 @@
+import com.learn.mockito.HttpRequestClient;
+import com.learn.mockito.ParentClass;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
@@ -22,8 +24,8 @@ public class ParentClassTestMockito {
 
   @Test
   public void mockedHttpRequestResponse(){
-    when(parentClass.proxyHttpGetRequest()).thenReturn("Im running mockito.");
+    when(this.parentClass.proxyHttpGetRequest()).thenReturn("Im running mockito.");
 
-    assertEquals( parentClass.proxyHttpGetRequest(),"Im running mockito.");
+    assertEquals(this.parentClass.proxyHttpGetRequest(), "Im running mockito.");
   }
 }
