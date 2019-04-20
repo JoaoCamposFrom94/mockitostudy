@@ -1,18 +1,15 @@
+import org.junit.Before;
+import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
-import java.util.List;
-
+import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
-import static org.testng.Assert.assertEquals;
 
 public class ParentClassTestMockito {
 
-  @BeforeTest
+  @Before
   public void init(){
     MockitoAnnotations.initMocks(this);
   }
