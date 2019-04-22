@@ -1,6 +1,10 @@
 package com.learn.mockito;
 
 public class ParentClass {
+  public ParentClass() {
+    System.out.println("ParentClass constructor");
+  }
+
   private HttpRequestClient serviceToBeMocked = new HttpRequestClient();
 
 

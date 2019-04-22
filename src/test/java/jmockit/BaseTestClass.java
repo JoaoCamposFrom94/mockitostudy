@@ -5,6 +5,10 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 public class BaseTestClass extends ParentBaseTestClass {
+  public BaseTestClass() {
+    System.out.println("CONSTRUCTOR- " + BaseTestClass.class.getCanonicalName());
+  }
+
   @BeforeSuite
   protected void beforeSuite1() {
     System.out.println("before SUITE- " + BaseTestClass.class.getCanonicalName());

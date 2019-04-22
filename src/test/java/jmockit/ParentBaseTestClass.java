@@ -6,6 +6,10 @@ import org.testng.annotations.BeforeTest;
 
 public class ParentBaseTestClass {
 
+  public ParentBaseTestClass() {
+    System.out.println("CONSTRUCTOR- " + ParentBaseTestClass.class.getCanonicalName());
+  }
+
   @BeforeSuite
   protected void beforeSuite() {
     System.out.println("before SUITE- " + ParentBaseTestClass.class.getCanonicalName());
