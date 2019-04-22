@@ -15,4 +15,10 @@ public class HttpRequestClient {
     return response.readEntity(String.class);
   }
 
+  public String publicMethodOnHttpClient() {
+    WebTarget webTarget = this.client.target("http://localhost:5000");
+    Response response = webTarget.request().get();
+    return response.readEntity(String.class);
+  }
+
 }

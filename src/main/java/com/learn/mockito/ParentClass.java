@@ -7,4 +7,10 @@ public class ParentClass {
   public String proxyHttpGetRequest() {
     return this.serviceToBeMocked.invokeHttpGet();
   }
+
+  public String invokePublicHttpMethod() {
+    HttpRequestClient serviceToBeMockedInsideMethod = new HttpRequestClient();
+
+    return serviceToBeMockedInsideMethod.publicMethodOnHttpClient();
+  }
 }
